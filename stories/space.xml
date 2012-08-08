@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story_plan>
+	<title>The Lizard Beast of Mydrox</title>
+	<setting>This story takes place in the distant future around the planet Mydrox.</setting>
+	<cast>
+		<actor>
+			<name>Zoe</name>
+			<description>a space explorer</description>
+			<pronoun>herself</pronoun>
+		</actor>
+		<actor>
+			<name>The Lizard Beast</name>
+			<description>a dangerous creature living in a cave on the planet Mydrox</description>
+			<pronoun>itself</pronoun>
+		</actor>
+	</cast>
+	<steps>
+		<startstep>
+			<descriptions>
+				<general>
+					Many years in the future, space explorers will travel from planet to planet attempting to make peaceful contact with alien races.
+					This is the story of Zoe, a space explorer orbiting the planet Mydrox in her starship.  Deep in a cave on the planet Mydrox
+					lives a dangerous Lizard Beast.  One day...
+				</general>
+			</descriptions>
+			<effects>
+				<proposition sign="true">(habitable ship)</proposition>
+				<proposition sign="true">(safe ship)</proposition>
+				<proposition sign="true">(habitable surface)</proposition>
+				<proposition sign="true">(safe surface)</proposition>
+				<proposition sign="true">(habitable cave)</proposition>
+				<proposition sign="true">(safe cave)</proposition>
+				<proposition sign="true">(alive zoe)</proposition>
+				<proposition sign="true">(safe zoe)</proposition>
+				<proposition sign="true">(at zoe ship)</proposition>
+				<proposition sign="true">(captain zoe ship)</proposition>
+				<proposition sign="true">(alive lizard)</proposition>
+				<proposition sign="true">(safe lizard)</proposition>
+				<proposition sign="true">(at lizard cave)</proposition>
+				<proposition sign="true">(guardian lizard surface)</proposition>
+				<proposition sign="false">(fighting zoe lizard)</proposition>
+				<proposition sign="false">(fighting lizard zoe)</proposition>
+				<intention>
+					<actor>Zoe</actor>
+					<goal sign="true">(friends zoe lizard)</goal>
+				</intention>
+				<intention>
+					<actor>Zoe</actor>
+					<goal sign="true">(safe zoe)</goal>
+				</intention>
+				<intention>
+					<actor>Zoe</actor>
+					<goal sign="true">(alive zoe)</goal>
+				</intention>
+				<intention>
+					<actor>The Lizard Beast</actor>
+					<goal sign="true">(safe lizard)</goal>
+				</intention>
+				<intention>
+					<actor>The Lizard Beast</actor>
+					<goal sign="true">(alive lizard)</goal>
+				</intention>
+			</effects>
+		</startstep>
+		<step executed="true" persist="false">
+			<name>(teleport-from-ship zoe ship surface)</name>
+			<actors>
+				<actor>Zoe</actor>
+			</actors>
+			<descriptions>
+				<general>Zoe teleported to the surface of planet Mydrox.</general>
+				<personal actor="Fate">Zoe will teleport to the surface of planet Mydrox.</personal>
+				<personal actor="Zoe">I will teleport to the surface of planet Mydrox.</personal>
+				<personal actor="The Lizard Beast">Zoe will teleport to the surface of planet Mydrox.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive zoe)</proposition>
+				<proposition sign="true">(at zoe ship)</proposition>
+				<proposition sign="true">(habitable surface)</proposition>
+				<proposition sign="true">(captain zoe ship)</proposition>
+				<proposition sign="true">(safe surface)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(at zoe surface)</proposition>
+				<proposition sign="false">(at zoe ship)</proposition>
+				<proposition sign="false">(fighting zoe lizard)</proposition>
+				<proposition sign="false">(fighting lizard zoe)</proposition>
+				<intention>
+					<actor>The Lizard Beast</actor>
+					<goal sign="false">(alive zoe)</goal>
+				</intention>
+			</effects>
+		</step>
+		<step executed="true" persist="false">
+			<name>(walk lizard cave surface)</name>
+			<actors>
+				<actor>The Lizard Beast</actor>
+			</actors>
+			<descriptions>
+				<general>The Lizard Beast walked to the surface of planet Mydrox.</general>
+				<personal actor="Fate">The Lizard Beast will walk to the surface of planet Mydrox.</personal>
+				<personal actor="Zoe">The Lizard Beast will walk to the surface of planet Mydrox.</personal>
+				<personal actor="The Lizard Beast">I will walk to the surface of planet Mydrox.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive lizard)</proposition>
+				<proposition sign="true">(at lizard cave)</proposition>
+				<proposition sign="true">(habitable surface)</proposition>
+				<proposition sign="false">(fighting lizard zoe)</proposition>
+				<proposition sign="false">(fighting zoe lizard)</proposition>
+				<proposition sign="true">(safe surface)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(at lizard surface)</proposition>
+				<proposition sign="false">(at lizard cave)</proposition>
+			</effects>
+		</step>
+		<step executed="true" persist="false">
+			<name>(attack lizard zoe surface)</name>
+			<actors>
+				<actor>The Lizard Beast</actor>
+			</actors>
+			<descriptions>
+				<general>The Lizard Beast started a fight with Zoe, which made Zoe angry.</general>
+				<personal actor="Fate">The Lizard Beast will start a fight with Zoe, which will make Zoe angry.</personal>
+				<personal actor="Zoe">The Lizard Beast will start a fight with me, which will make me angry.</personal>
+				<personal actor="The Lizard Beast">I will start a fight with Zoe, which will make Zoe angry.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive lizard)</proposition>
+				<proposition sign="true">(at lizard surface)</proposition>
+				<proposition sign="true">(alive zoe)</proposition>
+				<proposition sign="true">(at zoe surface)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(fighting lizard zoe)</proposition>
+				<intention>
+					<actor>Zoe</actor>
+					<goal sign="false">(fighting lizard zoe)</goal>
+				</intention>
+			</effects>
+		</step>
+		<step executed="false" persist="false">
+			<name>(kill zoe lizard)</name>
+			<actors>
+				<actor>Zoe</actor>
+			</actors>
+			<descriptions>
+				<general>Zoe killed the Lizard Beast.</general>
+				<personal actor="Fate">Zoe will kill the Lizard Beast.</personal>
+				<personal actor="Zoe">I will kill the Lizard Beast.</personal>
+				<personal actor="The Lizard Beast">Zoe will kill me.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive zoe)</proposition>
+				<proposition sign="true">(alive lizard)</proposition>
+				<proposition sign="true">(fighting lizard zoe)</proposition>
+				<proposition sign="false">(fighting zoe lizard)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="false">(alive lizard)</proposition>
+				<proposition sign="false">(fighting lizard zoe)</proposition>
+			</effects>
+		</step>
+		<step executed="false" persist="false">
+			<name>(kill lizard zoe)</name>
+			<actors>
+				<actor>The Lizard Beast</actor>
+			</actors>
+			<descriptions>
+				<general>The Lizard Beast killed Zoe.</general>
+				<personal actor="Fate">The Lizard Beast will kill Zoe.</personal>
+				<personal actor="Zoe">The Lizard Beast will kill me.</personal>
+				<personal actor="The Lizard Beast">I will kill Zoe.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive lizard)</proposition>
+				<proposition sign="true">(alive zoe)</proposition>
+				<proposition sign="true">(fighting lizard zoe)</proposition>
+				<proposition sign="false">(fighting zoe lizard)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="false">(alive zoe)</proposition>
+				<proposition sign="false">(fighting lizard zoe)</proposition>
+			</effects>
+		</step>
+		<step executed="true" persist="false">
+			<name>(calm zoe lizard)</name>
+			<actors>
+				<actor>Zoe</actor>
+			</actors>
+			<descriptions>
+				<general>Zoe calmed the Lizard Beast with a soothing song.</general>
+				<personal actor="Fate">Zoe will calm the Lizard Beast with a soothing song.</personal>
+				<personal actor="Zoe">I will calm the Lizard Beast with a soothing song.</personal>
+				<personal actor="The Lizard Beast">Zoe will calm me with a soothing song.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive zoe)</proposition>
+				<proposition sign="true">(alive lizard)</proposition>
+				<proposition sign="true">(fighting lizard zoe)</proposition>
+				<proposition sign="false">(fighting zoe lizard)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="false">(fighting lizard zoe)</proposition>
+			</effects>
+		</step>
+		<step executed="true" persist="false">
+			<name>(begin-erupt surface)</name>
+			<actors/>
+			<descriptions>
+				<general>A massive volcano on the surface of planet Mydrox began to erupt.</general>
+				<personal actor="Fate">A massive volcano on the surface of planet Mydrox will begin to erupt.</personal>
+				<personal actor="Zoe">A massive volcano on the surface of planet Mydrox will begin to erupt.</personal>
+				<personal actor="The Lizard Beast">A massive volcano on the surface of planet Mydrox will begin to erupt.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(at zoe surface)</proposition>
+				<proposition sign="true">(at lizard surface)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(erupting surface)</proposition>
+				<proposition sign="false">(safe surface)</proposition>
+				<proposition sign="false">(safe zoe)</proposition>
+				<proposition sign="false">(safe lizard)</proposition>
+				<intention>
+					<actor>Zoe</actor>
+					<goal sign="true">(safe zoe)</goal>
+				</intention>
+				<intention>
+					<actor>The Lizard Beast</actor>
+					<goal sign="true">(safe lizard)</goal>
+				</intention>
+			</effects>
+		</step>
+		<step executed="true" persist="false">
+			<name>(teleport-to-ship zoe surface ship)</name>
+			<actors>
+				<actor>Zoe</actor>
+			</actors>
+			<descriptions>
+				<general>Zoe teleported to her ship.</general>
+				<personal actor="Fate">Zoe will teleport to her ship.</personal>
+				<personal actor="Zoe">I will teleport to my ship.</personal>
+				<personal actor="The Lizard Beast">Zoe will teleport to her ship.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive zoe)</proposition>
+				<proposition sign="true">(at zoe surface)</proposition>
+				<proposition sign="true">(habitable ship)</proposition>
+				<proposition sign="true">(captain zoe ship)</proposition>
+				<proposition sign="false">(safe zoe)</proposition>
+				<proposition sign="true">(safe ship)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(at zoe ship)</proposition>
+				<proposition sign="false">(at zoe surface)</proposition>
+				<proposition sign="false">(fighting zoe lizard)</proposition>
+				<proposition sign="false">(fighting lizard zoe)</proposition>
+				<proposition sign="true">(safe zoe)</proposition>
+				<intention>
+					<actor>Zoe</actor>
+					<goal sign="true">(safe zoe)</goal>
+				</intention>
+			</effects>
+		</step>
+		<step executed="true" persist="false">
+			<name>(walk lizard surface cave)</name>
+			<actors>
+				<actor>The Lizard Beast</actor>
+			</actors>
+			<descriptions>
+				<general>The Lizard Beast walked to its underground nest.</general>
+				<personal actor="Fate">The Lizard Beast will walk to its underground nest.</personal>
+				<personal actor="Zoe">The Lizard Beast will walk to its underground nest.</personal>
+				<personal actor="The Lizard Beast">I walk to my underground nest.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive lizard)</proposition>
+				<proposition sign="true">(at lizard surface)</proposition>
+				<proposition sign="true">(habitable cave)</proposition>
+				<proposition sign="false">(fighting lizard zoe)</proposition>
+				<proposition sign="false">(fighting zoe lizard)</proposition>
+				<proposition sign="false">(safe lizard)</proposition>
+				<proposition sign="true">(safe cave)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(at lizard cave)</proposition>
+				<proposition sign="false">(at lizard surface)</proposition>
+				<proposition sign="true">(safe lizard)</proposition>
+				<intention>
+					<actor>The Lizard Beast</actor>
+					<goal sign="true">(safe lizard)</goal>
+				</intention>
+			</effects>
+		</step>
+		<step executed="true" persist="false">
+			<name>(erupt surface)</name>
+			<actors/>
+			<descriptions>
+				<general>A massive volcano erupted, covering the surface of planet Mydrox with magma, but no one was killed.</general>
+				<personal actor="Fate">A massive volcano will erupt, covering the surface of planet Mydrox with magma, but no one will be killed.</personal>
+				<personal actor="Zoe">A massive volcano will erupt, covering the surface of planet Mydrox with magma, but no one will be killed.</personal>
+				<personal actor="The Lizard Beast">A massive volcano will erupt, covering the surface of planet Mydrox with magma, but no one will be killed.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(erupting surface)</proposition>
+				<proposition sign="false">(at zoe surface)</proposition>
+				<proposition sign="false">(at lizard surface)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="false">(habitable surface)</proposition>
+			</effects>
+		</step>
+		<step executed="false" persist="false">
+			<name>(make-peace zoe lizard surface)</name>
+			<actors>
+				<actor>Zoe</actor>
+			</actors>
+			<descriptions>
+				<general>Zoe made peace with the Lizard Beast.</general>
+				<personal actor="Fate">Zoe will make peace with the Lizard Beast.</personal>
+				<personal actor="Zoe">I will make peace with the Lizard Beast.</personal>
+				<personal actor="The Lizard Beast">Zoe will make peace with me.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive zoe)</proposition>
+				<proposition sign="true">(at zoe surface)</proposition>				
+				<proposition sign="true">(alive lizard)</proposition>
+				<proposition sign="true">(at lizard surface)</proposition>
+				<proposition sign="false">(fighting zoe lizard)</proposition>
+				<proposition sign="false">(fighting lizard zoe)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(friends zoe lizard)</proposition>
+				<proposition sign="true">(friends lizard zoe)</proposition>
+			</effects>
+		</step>
+		<step executed="false" persist="true">
+			<name>(persist (safe zoe))</name>
+			<actors>
+				<actor>Zoe</actor>
+			</actors>
+			<descriptions>
+				<general>Zoe stayed safe from natural disasters.</general>
+				<personal actor="Fate">Zoe will stay safe from natural disasters.</personal>
+				<personal actor="Zoe">I will stay safe from natural disasters.</personal>
+				<personal actor="The Lizard Beast">Zoe will stay safe from natural disasters.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(safe zoe)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(safe zoe)</proposition>
+			</effects>
+		</step>
+		<step executed="true" persist="true">
+			<name>(persist (safe zoe))2</name>
+			<actors>
+				<actor>Zoe</actor>
+			</actors>
+			<descriptions>
+				<general>Zoe stayed safe from natural disasters.</general>
+				<personal actor="Fate">Zoe will stay safe from natural disasters.</personal>
+				<personal actor="Zoe">I will stay safe from natural disasters.</personal>
+				<personal actor="The Lizard Beast">Zoe will stay safe from natural disasters.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(safe zoe)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(safe zoe)</proposition>
+			</effects>
+		</step>
+		<step executed="true" persist="true">
+			<name>(persist (alive zoe))</name>
+			<actors>
+				<actor>Zoe</actor>
+			</actors>
+			<descriptions>
+				<general>Zoe stayed alive.</general>
+				<personal actor="Fate">Zoe will stay alive.</personal>
+				<personal actor="Zoe">I will stay alive.</personal>
+				<personal actor="The Lizard Beast">Zoe will stay alive.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive zoe)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(alive zoe)</proposition>
+			</effects>
+		</step>
+		<step executed="false" persist="true">
+			<name>(persist (safe lizard))</name>
+			<actors>
+				<actor>The Lizard Beast</actor>
+			</actors>
+			<descriptions>
+				<general>The Lizard Beast stayed safe from natural disasters.</general>
+				<personal actor="Fate">The Lizard Beast will stay safe from natural disasters.</personal>
+				<personal actor="Zoe">The Lizard Beast will stay safe from natural disasters.</personal>
+				<personal actor="The Lizard Beast">I will stay safe from natural disasters.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(safe lizard)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(safe lizard)</proposition>
+			</effects>
+		</step>
+		<step executed="true" persist="true">
+			<name>(persist (safe lizard))2</name>
+			<actors>
+				<actor>The Lizard Beast</actor>
+			</actors>
+			<descriptions>
+				<general>The Lizard Beast stayed safe from natural disasters.</general>
+				<personal actor="Fate">The Lizard Beast will stay safe from natural disasters.</personal>
+				<personal actor="Zoe">The Lizard Beast will stay safe from natural disasters.</personal>
+				<personal actor="The Lizard Beast">I will stay safe from natural disasters.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(safe lizard)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(safe lizard)</proposition>
+			</effects>
+		</step>
+		<step executed="true" persist="true">
+			<name>(persist (alive lizard))</name>
+			<actors>
+				<actor>The Lizard Beast</actor>
+			</actors>
+			<descriptions>
+				<general>The Lizard Beast stayed alive.</general>
+				<personal actor="Fate">The Lizard Beast will stay alive.</personal>
+				<personal actor="Zoe">The Lizard Beast will stay alive.</personal>
+				<personal actor="The Lizard Beast">I will stay alive.</personal>
+			</descriptions>
+			<preconditions>
+				<proposition sign="true">(alive lizard)</proposition>
+			</preconditions>
+			<effects>
+				<proposition sign="true">(alive lizard)</proposition>
+			</effects>
+		</step>
+		<endstep>
+			<descriptions>
+				<general>The end.</general>
+			</descriptions>
+			<preconditions>
+				<proposition sign="false">(habitable surface)</proposition>
+			</preconditions>
+		</endstep>
+	</steps>
+	<orderings/>
+	<causal_links>
+		<!-- Preconditions for (teleport-from-ship zoe ship surface) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(teleport-from-ship zoe ship surface)</head>
+			<label sign="true">(alive zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(teleport-from-ship zoe ship surface)</head>
+			<label sign="true">(at zoe ship)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(teleport-from-ship zoe ship surface)</head>
+			<label sign="true">(habitable surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(teleport-from-ship zoe ship surface)</head>
+			<label sign="true">(captain zoe ship)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(teleport-from-ship zoe ship surface)</head>
+			<label sign="true">(safe surface)</label>
+		</causal_link>
+		<!-- Preconditions for (walk lizard cave surface) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard cave surface)</head>
+			<label sign="true">(alive lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard cave surface)</head>
+			<label sign="true">(at lizard cave)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard cave surface)</head>
+			<label sign="true">(habitable surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard cave surface)</head>
+			<label sign="false">(fighting lizard zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard cave surface)</head>
+			<label sign="false">(fighting zoe lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard cave surface)</head>
+			<label sign="true">(safe surface)</label>
+		</causal_link>
+		<!-- Preconditions for (attack lizard zoe surface) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(attack lizard zoe surface)</head>
+			<label sign="true">(alive lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(walk lizard cave surface)</tail>
+			<head>(attack lizard zoe surface)</head>
+			<label sign="true">(at lizard surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(attack lizard zoe surface)</head>
+			<label sign="true">(alive zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(teleport-from-ship zoe ship surface)</tail>
+			<head>(attack lizard zoe surface)</head>
+			<label sign="true">(at zoe surface)</label>
+		</causal_link>
+		<!-- Preconditions for (kill lizard zoe) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(kill lizard zoe)</head>
+			<label sign="true">(alive lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(kill lizard zoe)</head>
+			<label sign="true">(alive zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(attack lizard zoe surface)</tail>
+			<head>(kill lizard zoe)</head>
+			<label sign="true">(fighting lizard zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(kill lizard zoe)</head>
+			<label sign="false">(fighting zoe lizard)</label>
+		</causal_link>
+		<!-- Preconditions for (calm zoe lizard) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(calm zoe lizard)</head>
+			<label sign="true">(alive zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(calm zoe lizard)</head>
+			<label sign="true">(alive lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(attack lizard zoe surface)</tail>
+			<head>(calm zoe lizard)</head>
+			<label sign="true">(fighting lizard zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(calm zoe lizard)</head>
+			<label sign="false">(fighting zoe lizard)</label>
+		</causal_link>
+		<!-- Preconditions for (make-peace zoe lizard surface) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(make-peace zoe lizard surface)</head>
+			<label sign="true">(alive zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(teleport-from-ship zoe ship surface)</tail>
+			<head>(make-peace zoe lizard surface)</head>
+			<label sign="true">(at zoe surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(make-peace zoe lizard surface)</head>
+			<label sign="true">(alive lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(walk lizard cave surface)</tail>
+			<head>(make-peace zoe lizard surface)</head>
+			<label sign="true">(at lizard surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(make-peace zoe lizard surface)</head>
+			<label sign="false">(fighting zoe lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(make-peace zoe lizard surface)</head>
+			<label sign="false">(fighting lizard zoe)</label>
+		</causal_link>
+		<!-- Preconditions for (kill zoe lizard) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(kill zoe lizard)</head>
+			<label sign="true">(alive zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(kill zoe lizard)</head>
+			<label sign="true">(alive lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(kill zoe lizard)</head>
+			<label sign="false">(fighting zoe lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(attack lizard zoe surface)</tail>
+			<head>(kill zoe lizard)</head>
+			<label sign="true">(fighting lizard zoe)</label>
+		</causal_link>
+		<!-- Preconditions for (begin-erupt surface) -->
+		<causal_link>
+			<tail>(teleport-from-ship zoe ship surface)</tail>
+			<head>(begin-erupt surface)</head>
+			<label sign="true">(at zoe surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(walk lizard cave surface)</tail>
+			<head>(begin-erupt surface)</head>
+			<label sign="true">(at lizard surface)</label>
+		</causal_link>
+		<!-- Preconditions for (teleport-to-ship zoe surface ship) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(teleport-to-ship zoe surface ship)</head>
+			<label sign="true">(alive zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(teleport-from-ship zoe ship surface)</tail>
+			<head>(teleport-to-ship zoe surface ship)</head>
+			<label sign="true">(at zoe surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(teleport-to-ship zoe surface ship)</head>
+			<label sign="true">(habitable ship)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(teleport-to-ship zoe surface ship)</head>
+			<label sign="true">(captain zoe ship)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(begin-erupt surface)</tail>
+			<head>(teleport-to-ship zoe surface ship)</head>
+			<label sign="false">(safe zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(teleport-to-ship zoe surface ship)</head>
+			<label sign="true">(safe ship)</label>
+		</causal_link>
+		<!-- Preconditions for (walk lizard surface cave) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard surface cave)</head>
+			<label sign="true">(alive lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(walk lizard cave surface)</tail>
+			<head>(walk lizard surface cave)</head>
+			<label sign="true">(at lizard surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard surface cave)</head>
+			<label sign="true">(habitable cave)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard surface cave)</head>
+			<label sign="false">(fighting zoe lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(calm zoe lizard)</tail>
+			<head>(walk lizard surface cave)</head>
+			<label sign="false">(fighting lizard zoe)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(begin-erupt surface)</tail>
+			<head>(walk lizard surface cave)</head>
+			<label sign="false">(safe lizard)</label>
+		</causal_link>
+		<causal_link>
+			<tail>start</tail>
+			<head>(walk lizard surface cave)</head>
+			<label sign="true">(safe cave)</label>
+		</causal_link>
+		<!-- Preconditions for (erupt surface) -->
+		<causal_link>
+			<tail>(begin-erupt surface)</tail>
+			<head>(erupt surface)</head>
+			<label sign="true">(erupting surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(teleport-to-ship zoe surface ship)</tail>
+			<head>(erupt surface)</head>
+			<label sign="false">(at zoe surface)</label>
+		</causal_link>
+		<causal_link>
+			<tail>(walk lizard surface cave)</tail>
+			<head>(erupt surface)</head>
+			<label sign="false">(at lizard surface)</label>
+		</causal_link>
+		<!-- Preconditions for (persist (safe zoe)) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(persist (safe zoe))</head>
+			<label sign="true">(safe zoe)</label>
+		</causal_link>
+		<!-- Preconditions for (persist (safe zoe))2 -->
+		<causal_link>
+			<tail>(teleport-to-ship zoe surface ship)</tail>
+			<head>(persist (safe zoe))2</head>
+			<label sign="true">(safe zoe)</label>
+		</causal_link>
+		<!-- Preconditions for (persist (alive zoe)) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(persist (alive zoe))</head>
+			<label sign="true">(alive zoe)</label>
+		</causal_link>
+		<!-- Preconditions for (persist (safe lizard)) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(persist (safe lizard))</head>
+			<label sign="true">(safe lizard)</label>
+		</causal_link>
+		<!-- Preconditions for (persist (safe lizard))2 -->
+		<causal_link>
+			<tail>(walk lizard surface cave)</tail>
+			<head>(persist (safe lizard))2</head>
+			<label sign="true">(safe lizard)</label>
+		</causal_link>
+		<!-- Preconditions for (persist (alive lizard)) -->
+		<causal_link>
+			<tail>start</tail>
+			<head>(persist (alive lizard))</head>
+			<label sign="true">(alive lizard)</label>
+		</causal_link>
+		<!-- Preconditions for end -->
+		<causal_link>
+			<tail>(erupt surface)</tail>
+			<head>end</head>
+			<label sign="false">(habitable surface)</label>
+		</causal_link>
+	</causal_links>
+	<intention_frames>
+		<frame>
+			<actor>Zoe</actor>
+			<goal sign="true">(friends zoe lizard)</goal>
+			<motivation>start</motivation>
+			<steps>
+				<step>(teleport-from-ship zoe ship surface)</step>
+				<step>(calm zoe lizard)</step>
+			</steps>
+			<satisfaction>(make-peace zoe lizard surface)</satisfaction>
+		</frame>
+		<frame>
+			<actor>Zoe</actor>
+			<goal sign="true">(safe zoe)</goal>
+			<motivation>start</motivation>
+			<steps/>
+			<satisfaction>(persist (safe zoe))</satisfaction>
+		</frame>
+		<frame>
+			<actor>Zoe</actor>
+			<goal sign="true">(alive zoe)</goal>
+			<motivation>start</motivation>
+			<steps/>
+			<satisfaction>(persist (alive zoe))</satisfaction>
+		</frame>
+		<frame>
+			<actor>The Lizard Beast</actor>
+			<goal sign="true">(safe lizard)</goal>
+			<motivation>start</motivation>
+			<steps/>
+			<satisfaction>(persist (safe lizard))</satisfaction>
+		</frame>
+		<frame>
+			<actor>The Lizard Beast</actor>
+			<goal sign="true">(alive lizard)</goal>
+			<motivation>start</motivation>
+			<steps/>
+			<satisfaction>(persist (alive lizard))</satisfaction>
+		</frame>
+		<frame>
+			<actor>The Lizard Beast</actor>
+			<goal sign="false">(alive zoe)</goal>
+			<motivation>(teleport-from-ship zoe ship surface)</motivation>
+			<steps>
+				<step>(walk lizard cave surface)</step>
+				<step>(attack lizard zoe surface)</step>
+			</steps>
+			<satisfaction>(kill lizard zoe)</satisfaction>
+		</frame>
+		<frame>
+			<actor>Zoe</actor>
+			<goal sign="false">(fighting lizard zoe)</goal>
+			<motivation>(attack lizard zoe surface)</motivation>
+			<steps/>
+			<satisfaction>(kill zoe lizard)</satisfaction>
+		</frame>
+		<frame>
+			<actor>Zoe</actor>
+			<goal sign="true">(safe zoe)</goal>
+			<motivation>(begin-erupt surface)</motivation>
+			<steps/>
+			<satisfaction>(teleport-to-ship zoe surface ship)</satisfaction>
+		</frame>
+		<frame>
+			<actor>Zoe</actor>
+			<goal sign="true">(safe zoe)</goal>
+			<motivation>(teleport-to-ship zoe surface ship)</motivation>
+			<steps/>
+			<satisfaction>(persist (safe zoe))2</satisfaction>
+		</frame>
+		<frame>
+			<actor>The Lizard Beast</actor>
+			<goal sign="true">(safe lizard)</goal>
+			<motivation>(begin-erupt surface)</motivation>
+			<steps/>
+			<satisfaction>(walk lizard surface cave)</satisfaction>
+		</frame>
+		<frame>
+			<actor>The Lizard Beast</actor>
+			<goal sign="true">(safe lizard)</goal>
+			<motivation>(walk lizard surface cave)</motivation>
+			<steps/>
+			<satisfaction>(persist (safe lizard))2</satisfaction>
+		</frame>
+	</intention_frames>
+</story_plan>
